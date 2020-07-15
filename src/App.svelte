@@ -1,6 +1,4 @@
 <script>
-	import Header from './components/Header.svelte';
-	import Footer from './components/Footer.svelte';
 	import Tabs from './shared/Tabs.svelte';
 	import CreatePollForm from './components/CreatePollForm.svelte'
 	import PollList from './components/PollList.svelte'
@@ -18,7 +16,6 @@
 
 </script>
 
-<Header />
 	<main>
 
 		<Tabs {items} {activeItem} on:tabChange={tabChange}/>
@@ -34,7 +31,6 @@
 		{/if}
 
 	</main>
-<Footer />
 
 <style>
 	main {
